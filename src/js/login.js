@@ -1,16 +1,4 @@
-import App from '../App.svelte';
-
-const app = new App({
-  target: document.body,
-  props: {
-    name: 'world'
-  }
-});
-
-export default app;
-
-let current = null;
-
+var current = null;
 document.querySelector('#email').addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
@@ -27,7 +15,6 @@ document.querySelector('#email').addEventListener('focus', function(e) {
     }
   });
 });
-
 document.querySelector('#password').addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
@@ -44,7 +31,6 @@ document.querySelector('#password').addEventListener('focus', function(e) {
     }
   });
 });
-
 document.querySelector('#submit').addEventListener('focus', function(e) {
   if (current) current.pause();
   current = anime({
