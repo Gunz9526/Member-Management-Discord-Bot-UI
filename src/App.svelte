@@ -9,6 +9,7 @@
 	  '/' : Session,
 	  '/session/:session_name': Session,
 	  '/dashboard': Dashboard,
+	//   '/admin': Dashboard,
 	};
 
 	// function updateTitle(route) {

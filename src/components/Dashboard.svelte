@@ -8,18 +8,20 @@
 </script>
 
 <style>
+
   .tabs {
-	display: flex;
-	cursor: pointer;
+  display: flex;
+  cursor: pointer;
   }
   .tab {
-	padding: 10px;
-	border: 1px solid #ccc;
+  padding: 10px;
+  border: 1px solid #ccc;
   }
   .active {
-	background-color: #ddd;
+  background-color: #ddd;
   }
 </style>
+
 
 <div class="tabs">
     <div class="tab" class:active={$activeTab === 'clans'} on:click={() => activeTab.set('clans')}>Clans</div>
@@ -27,6 +29,7 @@
     <div class="tab" class:active={$activeTab === 'blacklist'} on:click={() => activeTab.set('blacklist')}>Blacklist</div>
 </div>
   
+
 
 
 {#if $activeTab === 'clans'}
